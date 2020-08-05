@@ -1,0 +1,215 @@
+@font-face {
+  font-family: Digital;
+  src: url(../fonts/digital.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  background-color: rgb(29, 28, 28);
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.navbar {
+  top: 0;
+  font-size: 2rem;
+  height: 10vh;
+  min-height: 5rem;
+  background-color: rgb(41, 41, 41);
+  display: flex;
+  margin-bottom: 15rem;
+  position: sticky;
+  z-index: 2;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.right-menu .menu .menu-link {
+  display: inline-block;
+  padding: 0.5rem;
+  margin-left: 2rem;
+}
+
+.menu-link button {
+  font-size: 2rem;
+  height: 4rem;
+  width: 10rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.stopwatch {
+  top: 8vh;
+  position: sticky;
+  padding: 5rem 2rem 5rem 2rem;
+  font-size: 10rem;
+  font-family: Digital;
+  margin-bottom: 1rem;
+  background-color: rgb(29, 28, 28);
+  z-index: 1;
+}
+
+.milliseconds {
+  font-size: 5rem;
+}
+
+.controls {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  width: 13rem;
+  height: 5rem;
+  font-size: 2.1rem;
+  border-radius: 0.5rem;
+}
+
+.lap-container {
+  top: 45vh;
+  position: sticky;
+}
+
+.lap-unit {
+  list-style: none;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.lap-list-header {
+  background-color: rgb(29, 28, 28);
+  top: 39vh;
+  position: sticky;
+  padding: 5rem 2rem 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  grid-gap: 4rem;
+  margin-bottom: 1rem;
+  margin-right: -1.5rem;
+  font-size: 2rem;
+  z-index: 1;
+}
+
+.lap-time {
+  text-align: start;
+}
+
+.lap-list {
+  z-index: -1;
+  text-align: center;
+  font-size: 1.6rem;
+  justify-content: space-between;
+  display: grid;
+  grid-gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.lap-list .lap-time,
+.lap-list .lap-diff {
+  text-align: start;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 95vw;
+  }
+
+  .main {
+    width: 100%;
+  }
+  .logo {
+    font-size: 1.7rem;
+  }
+
+  .right-menu .menu .menu-link {
+    padding: 0.5rem;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+  }
+
+  .menu-link button {
+    font-size: 1.5rem;
+    height: 2.7rem;
+    width: 6rem;
+  }
+
+  .stopwatch {
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 5rem;
+    font-family: Digital;
+  }
+
+  .milliseconds {
+    font-size: 3rem;
+  }
+
+  .controls {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  button {
+    margin-right: 1rem;
+    width: 6.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.3rem;
+  }
+
+  .lap-list-header {
+    top: 45vh;
+    z-index: 2;
+    font-size: 1.4rem;
+  }
+
+  .lap-list {
+    font-size: 1.35rem;
+  }
+  .lap-unit {
+    margin-left: -2.3rem;
+  }
+}
