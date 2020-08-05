@@ -21,14 +21,10 @@ let temp = 0;
 let lap = false;
 let lapTotalPrev = 0;
 let count = 0;
-let stopHour = 0;
-let stopMinute = 0;
-let stopSecond = 0;
-let stopMillisec = 0;
 
 window.onkeypress = function (event) {
-  if (event.which === 32) return timeUpdate();
-  if (event.which === 13) return reset();
+  if (event.which === 32) return reset();
+  if (event.which === 13) return timeUpdate();
 };
 
 function clock() {
