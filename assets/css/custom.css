@@ -1,0 +1,41 @@
+html,
+body {
+  background-color: rgb(41, 41, 41);
+  color: whitesmoke;
+}
+
+.navbar-brand {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-section p {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.nav-bg-dark {
+  background-color: rgb(29, 28, 28);
+}
+
+.background-dark {
+  background-color: rgb(41, 41, 41);
+}
+
+.navbar-nav {
+  font-size: 1.2rem;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  background-color: whitesmoke;
+}
+
+.social-media ul li {
+  opacity: 0.8;
+}
+
+.social-media ul li:hover {
+  opacity: 1;
+}

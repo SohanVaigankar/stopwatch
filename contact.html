@@ -8,17 +8,22 @@
     />
     <title>Stopwatch | Contact</title>
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-      integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
-      crossorigin="anonymous"
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
+    integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX"
+    crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/custom.css">
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <a class="navbar-brand" href="#">Stopwatch</a>
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg-dark p-3">
+      <div class="container ">
+        <a class="navbar-brand font-weight-bolder" href="#">Stopwatch</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -51,17 +56,17 @@
         </div>
       </div>
     </nav>
-    <section class="contact-form container ">
+    <section class="contact-form container my-3 p-2">
       <h2 class="text-center">Get In Touch </h2>
       <form>
         <div class="form-group">
           <label for="name">Name</label>
-          <input type="email" class="form-control" required id="name">
+          <input type="text" class="form-control" required id="name">
         </div>
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <small id="emailHelp" class="form-text text-muted ">We'll never share your email with anyone else.</small>
         </div>
         <div class="form-group">
           <label for="message">Message</label>
@@ -72,24 +77,25 @@
     </section class="contact-form">
 
     <!-- Social Media Handles -->
-    <section class="social-media">
-      <ul class="d-flex justify-content-center container">
-        <li class="list-group-item border-0">
+    <section class="social-media p-2 my-3">
+      <h4 class="text-center">Social Media</h4>
+      <ul class="d-flex justify-content-center container ">
+        <li class="list-group-item border-0 background-dark">
           <a target="_blank" href="https://github.com/sohanvaigankar">
             <img src="./assets/logos/github-logo.svg" alt="Github" />
           </a>
         </li>
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 background-dark">
           <a target="_blank" href="https://twitter.com/sohanvaigankar">
             <img src="./assets/logos/twitter-logo.svg" alt="Twitter" />
           </a>
         </li>
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 background-dark">
           <a target="_blank" href="https://www.instagram.com/sohanvaigankar">
             <img src="./assets/logos/instagram-logo.svg" alt="Instagram" />
           </a>
         </li>
-        <li class="list-group-item border-0">
+        <li class="list-group-item border-0 background-dark">
           <a target="_blank" href="https://www.linkedin.com/in/sohanvaigankar">
             <img src="./assets/logos/linkedin-logo.svg" alt="LinkedIn" />
           </a>
@@ -97,7 +103,7 @@
       </ul>
     </section>
     <!-- Footer -->
-    <footer class="fixed-bottom text-center bg-light">
+    <footer class="fixed-bottom text-center mb-n2  p-1">
       <p class="container">
         Copyright &copy; 2020, Sohan Vaigankar, All Rights Reserved
       </p>

@@ -16,7 +16,7 @@ html {
 
 body {
   width: 100vw;
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(41, 41, 41);
 }
 
 .container {
@@ -29,7 +29,7 @@ body {
   font-size: 2rem;
   height: 10vh;
   min-height: 5rem;
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(29, 28, 28);
   display: flex;
   margin-bottom: 15rem;
   position: sticky;
@@ -81,7 +81,7 @@ body {
   font-size: 10rem;
   font-family: Digital;
   margin-bottom: 1rem;
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(41, 41, 41);
   z-index: 1;
 }
 
@@ -115,7 +115,7 @@ button {
 }
 
 .lap-list-header {
-  background-color: rgb(29, 28, 28);
+  background-color: rgb(41, 41, 41);
   top: 39vh;
   position: sticky;
   padding: 5rem 2rem 2rem 2rem;
