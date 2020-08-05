@@ -127,10 +127,6 @@ function reset() {
     seconds = 0;
     milliSeconds = 0;
     lapTotalPrev = 0;
-    stopHour = 0;
-    stopMinute = 0;
-    stopSecond = 0;
-    stopMillisec = 0;
     stopwatchDisplay(minutes, minuteUnit);
     stopwatchDisplay(seconds, secondUnit);
     stopwatchDisplay(milliSeconds, milliSecUnit);
