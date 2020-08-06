@@ -39,3 +39,26 @@ body {
 .social-media ul li:hover {
   opacity: 1;
 }
+
+.social-media ul li a img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.dark-box-shadow {
+  box-shadow: rgb(29, 28, 28) 0.2rem 0.2rem 0.3rem 0.1rem;
+}
+
+@media (max-width: 786px) {
+  .social-media ul li a img {
+    height: 4rem;
+    width: 4rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-media ul li a img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
