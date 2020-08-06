@@ -62,8 +62,12 @@ function timeUpdate() {
   lap = true;
   temp = temp + 1;
   if (temp === 1) {
+    startBtn.classList.remove(".btn-success");
+    resetBtn.classList.remove(".btn-warning");
     startBtn.textContent = "Stop";
+    startBtn.classList.add(".btn-danger");
     resetBtn.textContent = "Lap";
+    resetBtn.classList.add(".btn-primary");
     if (hours > 0) {
       hourUnit.classList.add(".hours");
     }
@@ -79,7 +83,9 @@ function timeUpdate() {
     clearInterval(secondFunction);
     clearInterval(milliSecFunction);
     startBtn.textContent = "Start";
+    startBtn.classList.remove(".btn-danger");
     resetBtn.textContent = "Reset";
+    resetBtn.classList.remove(".btn-primary");
   }
 }
 
