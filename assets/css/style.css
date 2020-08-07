@@ -23,8 +23,8 @@ body {
 }
 
 .navbar-brand img {
-  height: 7rem;
-  width: 7rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .nav-bg-dark {
@@ -130,8 +130,8 @@ body {
 
 @media (max-width: 786px) {
   .navbar-brand img {
-    height: 5rem;
-    width: 5rem;
+    height: 2.7rem;
+    width: 2.7rem;
   }
   .stopwatch {
     top: 4.75rem;
@@ -173,8 +173,8 @@ body {
 
 @media (max-width: 500px) {
   .navbar-brand img {
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2rem;
+    width: 2rem;
   }
 
   .stopwatch {
