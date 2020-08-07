@@ -21,6 +21,12 @@ body {
   font-size: 1.5rem;
   font-family: "Poppins", sans-serif;
 }
+
+.navbar-brand img {
+  height: 7rem;
+  width: 7rem;
+}
+
 .nav-bg-dark {
   background-color: rgb(29, 28, 28);
 }
@@ -123,6 +129,10 @@ body {
 }
 
 @media (max-width: 786px) {
+  .navbar-brand img {
+    height: 5rem;
+    width: 5rem;
+  }
   .stopwatch {
     top: 4.75rem;
     margin-top: 10rem;
@@ -162,6 +172,11 @@ body {
 }
 
 @media (max-width: 500px) {
+  .navbar-brand img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+
   .stopwatch {
     top: 4.6rem;
     margin-top: 8rem;
