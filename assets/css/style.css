@@ -11,58 +11,27 @@
 
 html {
   font-family: "Poppins", sans-serif;
-  font-size: 62.5%;
 }
 
 body {
-  width: 100vw;
+  /* width: 100vw; */
+  background-color: rgb(41, 41, 41);
+}
+.navbar-brand {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+.nav-bg-dark {
+  background-color: rgb(29, 28, 28);
+}
+
+.background-dark {
   background-color: rgb(41, 41, 41);
 }
 
-.container {
-  width: 80vw;
-  margin: 0 auto;
-}
-
-.navbar {
-  top: 0;
-  font-size: 2rem;
-  height: 10vh;
-  min-height: 5rem;
-  background-color: rgb(29, 28, 28);
-  display: flex;
-  margin-bottom: 15rem;
-  position: sticky;
-  z-index: 2;
-}
-
-.navbar .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 2.6rem;
-  font-weight: 600;
-}
-
-.right-menu .menu .menu-link {
-  display: inline-block;
-  padding: 0.5rem;
-  margin-left: 2rem;
-}
-
-.menu-link button {
-  font-size: 2rem;
-  height: 4rem;
-  width: 10rem;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: whitesmoke;
+.navbar-nav {
+  font-size: 1.2rem;
 }
 
 .main {
@@ -71,61 +40,67 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 1.25rem;
 }
 
 .stopwatch {
-  top: 8vh;
+  top: 4.8rem;
   position: sticky;
-  padding: 5rem 2rem 5rem 2rem;
-  font-size: 10rem;
+  padding: 1.5rem 3.12rem;
+  padding-bottom: 5rem;
+  font-size: 6.25rem;
   font-family: Digital;
-  margin-bottom: 1rem;
+  margin-top: 10rem;
+  margin-bottom: 0.625rem;
   background-color: rgb(41, 41, 41);
   z-index: 1;
 }
 
 .milliseconds {
-  font-size: 5rem;
+  font-size: 3.12rem;
 }
 
 .controls {
-  margin-top: 2rem;
+  margin-top: 1.25rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
-button {
-  width: 13rem;
-  height: 5rem;
-  font-size: 2.1rem;
-  border-radius: 0.5rem;
+.button {
+  font-family: "poppins", sans-serif;
+  color: whitesmoke;
+  padding: 0.8rem 3rem;
+  font-size: 1.31rem;
 }
 
-.lap-container {
-  top: 45vh;
-  position: sticky;
+.button:hover {
+  color: whitesmoke;
+}
+
+.btn-warning {
+  background-color: rgb(255, 166, 22);
 }
 
 .lap-unit {
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
   display: flex;
   flex-direction: column;
+  /* margin-left: -2rem; */
 }
 
 .lap-list-header {
   background-color: rgb(41, 41, 41);
-  top: 39vh;
+  top: 22rem;
   position: sticky;
-  padding: 5rem 2rem 2rem 2rem;
+  padding: 3.12rem 1.25rem 1.25rem 1.25rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
-  grid-gap: 4rem;
-  margin-bottom: 1rem;
-  margin-right: -1.5rem;
-  font-size: 2rem;
+  grid-gap: 2.5rem;
+  margin-bottom: 0.625rem;
+  margin-right: -0.93rem;
+  font-size: 1.25rem;
   z-index: 1;
 }
 
@@ -136,10 +111,10 @@ button {
 .lap-list {
   z-index: -1;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1rem;
   justify-content: space-between;
   display: grid;
-  grid-gap: 4rem;
+  grid-gap: 2.5rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -148,38 +123,12 @@ button {
   text-align: start;
 }
 
-@media (max-width: 500px) {
-  .container {
-    width: 95vw;
-  }
-
-  .main {
-    width: 100%;
-  }
-  .logo {
-    font-size: 1.7rem;
-  }
-
-  .right-menu .menu .menu-link {
-    padding: 0.5rem;
-    margin-left: 1rem;
-    font-size: 1.5rem;
-  }
-
-  .menu-link button {
-    font-size: 1.5rem;
-    height: 2.7rem;
-    width: 6rem;
-  }
-
+@media (max-width: 786px) {
   .stopwatch {
-    height: 40vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    font-size: 5rem;
-    font-family: Digital;
+    top: 4.75rem;
+    margin-top: 10rem;
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
   }
 
   .milliseconds {
@@ -187,29 +136,68 @@ button {
   }
 
   .controls {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: space-evenly;
+    margin-top: 1.25rem;
   }
 
-  button {
+  .button {
+    padding: 0.6rem 2rem;
+    font-size: 1.3rem;
     margin-right: 1rem;
-    width: 6.5rem;
-    height: 2.5rem;
-    font-size: 1.5rem;
-    border-radius: 0.3rem;
   }
 
   .lap-list-header {
-    top: 45vh;
+    top: 17rem;
     z-index: 2;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    padding-top: 3rem;
   }
 
   .lap-list {
-    font-size: 1.35rem;
+    font-size: 1rem;
   }
   .lap-unit {
-    margin-left: -2.3rem;
+    margin-left: -1.43rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .stopwatch {
+    top: 4.6rem;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 3.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .milliseconds {
+    font-size: 2rem;
+  }
+
+  .controls {
+    margin-top: 1.25rem;
+  }
+
+  .button {
+    padding: 0.5rem 1rem;
+    margin-right: 0.625rem;
+    font-size: 1.1rem;
+  }
+
+  .lap-list-header {
+    top: 16rem;
+    z-index: 2;
+    font-size: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 0;
+    padding-top: 2rem;
+  }
+
+  .lap-list {
+    font-size: 0.84rem;
   }
 }

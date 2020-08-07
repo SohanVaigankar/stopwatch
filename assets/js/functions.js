@@ -22,6 +22,9 @@ let lap = false;
 let lapTotalPrev = 0;
 let count = 0;
 
+startBtn.classList.add("btn-success");
+resetBtn.classList.add("btn-warning");
+
 window.onkeypress = function (event) {
   if (event.which === 32) return reset();
   if (event.which === 13) return timeUpdate();
@@ -62,6 +65,10 @@ function timeUpdate() {
   lap = true;
   temp = temp + 1;
   if (temp === 1) {
+    startBtn.classList.remove("btn-success");
+    resetBtn.classList.remove("btn-warning");
+    startBtn.classList.add("btn-danger");
+    resetBtn.classList.add("btn-primary");
     startBtn.textContent = "Stop";
     resetBtn.textContent = "Lap";
     if (hours > 0) {
@@ -78,6 +85,10 @@ function timeUpdate() {
     clearInterval(minuteFunction);
     clearInterval(secondFunction);
     clearInterval(milliSecFunction);
+    startBtn.classList.remove("btn-danger");
+    resetBtn.classList.remove("btn-primary");
+    startBtn.classList.add("btn-success");
+    resetBtn.classList.add("btn-warning");
     startBtn.textContent = "Start";
     resetBtn.textContent = "Reset";
   }
